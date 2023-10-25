@@ -13,7 +13,7 @@ namespace ECommerce.Persistence
     {
         public static void AddPersistenceServices(this IServiceCollection services)
         {
-           services.AddDbContext<ECommerceDbContext>(options=>options.UseNpgsql(Config));
+           services.AddDbContext<ECommerceDbContext>(options=>options.UseNpgsql(Configuration.ConnectionString));
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace ECommerce.Persistence
 {
     static class Configuration
     {
-        public string ConnectionString
+      static  public string ConnectionString
         {
             get
             {
